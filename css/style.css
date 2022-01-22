@@ -620,8 +620,26 @@ span.sub-title{
     font-size: 42px;
     line-height: 60px;
 }
-.hero-content-left h1 span{
-    font-weight: 700;
+.hero-content-left h4{
+    font-weight: 600;
+    font-size: 28px;
+    color: #ffffff;
+}
+.hero-content-left h5{
+    font-weight: 600;
+    font-size: 24px;
+}
+.hero-content-left h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+}    
+.hero-content-left h2 span{
+    font-weight: 200;
+    line-height: 60px;
+}
+.hero-content-left date{
+    color: #fff;
 }
 @media (min-width: 992px){
     .hero-animation-img {
