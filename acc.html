@@ -124,51 +124,121 @@
               <form action="#">
                 <div class="user-details">
                   <div class="input-box">
-                    <span class="details">Full Name</span>
-                    <input type="text" placeholder="Enter your name" required>
+                    <span class="details font-weight-bold">Firstname</span>
+                    <input type="text" placeholder="Enter your firstname" required>
                   </div>
                   <div class="input-box">
-                    <span class="details">Username</span>
-                    <input type="text" placeholder="Enter your username" required>
+                    <span class="details font-weight-bold">Lastname</span>
+                    <input type="text" placeholder="Enter your lastname" required>
                   </div>
                   <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="text" placeholder="Enter your email" required>
+                    <span class="details font-weight-bold">Phone Number</span>
+                    <input type="tel"  pattern="[0-9]{10}" placeholder="Enter your 10 digit mobile number" required>
                   </div>
                   <div class="input-box">
-                    <span class="details">Phone Number</span>
-                    <input type="text" placeholder="Enter your number" required>
+                      <span class="details font-weight-bold">Email ID</span>
+                    <input id="email" oninvalid="InvalidMsg(this);" 
+                    oninput="InvalidMsg(this);" name="email" 
+                    type="email" placeholder="Enter your mail-id" required> 
                   </div>
                   <div class="input-box">
-                    <span class="details">Password</span>
-                    <input type="text" placeholder="Enter your password" required>
+                    <span class="details font-weight-bold">Highest Qualification</span>
+                    <input type="text" placeholder="Qualification" required>
                   </div>
                   <div class="input-box">
-                    <span class="details">Confirm Password</span>
-                    <input type="text" placeholder="Confirm your password" required>
+                    <span class="details font-weight-bold">Name of the Institute</span>
+                    <input type="text" placeholder="Institute name" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details font-weight-bold">State</span>
+                    <input type="text" placeholder="Enter your State" required>
+                  </div>
+                  
+                  <div class="input-box">
+                    <label for="birthday font-weight-bold">Date of Birth :</label>
+                     <input type="date" id="birthday" name="birthday" required>
                   </div>
                 </div>
-                <div class="gender-details">
-                  <input type="radio" name="gender" id="dot-1">
-                  <input type="radio" name="gender" id="dot-2">
-                  <input type="radio" name="gender" id="dot-3">
-                  <span class="gender-title">Gender</span>
+                <div class="gender-details col-lg-5">
+                  <input type="radio" name="gender" id="dot-1" required>
+                  <input type="radio" name="gender" id="dot-2" required>
+                  <input type="radio" name="gender" id="dot-3" required>
+                  <span class="gender-title font-weight-bold">Gender</span>
                   <div class="category">
                     <label for="dot-1">
                     <span class="dot one"></span>
-                    <span class="gender">Male</span>
+                    <span class="gender font-weight-bold">Male</span>
                   </label>
                   <label for="dot-2">
                     <span class="dot two"></span>
-                    <span class="gender">Female</span>
+                    <span class="gender font-weight-bold">Female</span>
                   </label>
                   <label for="dot-3">
                     <span class="dot three"></span>
-                    <span class="gender">Prefer not to say</span>
+                    <span class="gender font-weight-bold">Prefer not to say</span>
                     </label>
                   </div>
                   
                 </div>
+                <div class="user-details col-lg-6">
+                   
+                    <p class="lead "> <strong class="color-teriary font-weight-bold ">Payment for ACADEMICIANS</strong></p>
+                    <a href="404.html"> <h2 class="lead "> <strong class="color-primary font-weight-bold ">Press This To Pay</strong></h2></a>
+
+
+                </div>
+                
+                <div class="user-details">
+                    <div class="input-box font-weight-bold">
+                        <span class="details color-teriary font-weight-bolder">Payment reference id (After successful payment completion)</span>
+                        <input type="text" placeholder="Enter your payement ref id." required>
+                    </div>
+
+                </div>
+                <div class="input-box ">
+                    <span class="details color-tertiary font-weight-bolder ">PAPER THEME</span>
+
+                    <select class="font-weight-bold color-primary button col-lg-6" required>
+                        <option >select*</option>
+                        <option >COMPUTING TECHNOLOGIES</option>
+                        <option >COMMUNICATION TECHNOLOGIES</option>
+                      
+                    </select>
+                   
+                </div>
+                <div class="input-box ">
+                    <span class="details color-tertiary font-weight-bolder ">PAPER TOPIC</span>
+
+                    <select class="font-weight-bold color-primary button col-lg-6" required>
+                        <option >select*</option>
+                        <option >Artificial Intelligence</option>
+                        <option >Machine Learning for Communications</option>
+                        <option >Bio-medical computing and Bio-informatics</option>
+                        <option >Cryptography and Applied Mathematics</option>
+                        <option >Mobile Computing</option>
+                        <option >Cloud, Cluster, Grid and P2P computing</option>
+                        <option >Antenna and Wave Propagation</option>
+                        <option >Electromagnetic absorbers</option>
+                        <option >Cognitive Radio and Networks</option>
+                        <option >Signal and Image Processing</option>
+                        <option >Information Theory and Coding</option>
+                        <option >Optical Networks</option>
+                        <option >Wireless Sensor Networks</option>
+                        <option >Wireless Communications</option>
+                        
+                    </select>
+                   
+                </div>
+                <div class="user-details">
+                    <div class="input-box font-weight-bold">
+                        <span class="details color-teriary font-weight-bolder">Please attach your paper in pdf format here.</span>
+                        <input type="file" accept=".pdf" placeholder="Enter your payement ref id." required>
+                    </div>
+
+                </div>
+                
+               
+                
                 <br>
                 <div class="button">
                   <input type="submit" value="Register">

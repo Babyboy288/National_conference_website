@@ -3536,5 +3536,9 @@ button, [type="button"], [type="reset"], [type="submit"] {
     .captcha-area .captcha-img{
       width: 250px;
     }
+    .option-box{
+        height:100px;
+
+    }
   }
   

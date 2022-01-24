@@ -357,5 +357,19 @@ jQuery(function ($) {
             $(parentSelector + " .message-box div").removeClass('alert-success').addClass('alert-danger').text('Found error in the form. Please check again.');
         }
     }
+    function InvalidMsg(textbox) {
+  
+        if (textbox.value === '') {
+            textbox.setCustomValidity
+                  ('Entering an email-id is necessary!');
+        } else if (textbox.validity.typeMismatch) {
+            textbox.setCustomValidity
+                  ('Please enter an email address which is valid!');
+        } else {
+            textbox.setCustomValidity('');
+        }
+
+        return true;
+    }
 
 }); // JQuery end
