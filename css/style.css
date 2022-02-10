@@ -61,6 +61,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+    text-align: justify;
+    text-justify: inter-word;
     line-height: 1;
 }
 
@@ -3540,5 +3542,6 @@ button, [type="button"], [type="reset"], [type="submit"] {
         height:100px;
 
     }
+   
   }
   
